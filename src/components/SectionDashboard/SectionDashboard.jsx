@@ -21,7 +21,6 @@ const SectionDashboard = () => {
             Authorization: `Bearer ${JSON.parse(token)}`,
           },});
        setProfile(response.data);
-       console.log(response.data)
       } catch (err) {
         localStorage.clear()
         navigate('/login')
